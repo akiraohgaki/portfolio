@@ -1,0 +1,120 @@
+:root {
+    --size-card: 500px;
+}
+
+h1,
+h2,
+h3 {
+    margin: var(--size-space) 0;
+}
+
+p {
+    margin: var(--size-space) 0;
+}
+
+akira-project-card {
+    width: var(--size-card);
+    height: var(--size-card);
+    box-shadow: 0px 3px var(--size-shadow) var(--color-shadow);
+}
+
+akira-project-card h3,
+akira-project-card p {
+    margin: 0;
+}
+
+akira-project-card h3 {
+    margin-bottom: var(--size-space-small);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--size-card));
+    gap: var(--size-space-large);
+    justify-content: center;
+}
+
+header,
+footer,
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+    header,
+    footer,
+    main {
+        max-width: 768px;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --size-card: 425px;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --size-card: 320px;
+    }
+}
+
+header {
+    margin: calc(var(--size-space) * 5) auto calc(var(--size-space) * 3) auto;
+}
+
+header::after {
+    content: ' ';
+    display: inline-block;
+    width: var(--size-card);
+    height: var(--size-card);
+    border-radius: var(--size-radius-large);
+    background: var(--color-surface) url(https://www.gravatar.com/avatar/72b1d8fc1c4077a12ca5da4d17c93f88?s=500) no-repeat center center / cover;
+    box-shadow: 0px 3px var(--size-shadow) var(--color-shadow);
+}
+
+header > div {
+    display: flex;
+    flex-flow: column nowrap;
+    width: var(--size-card);
+}
+
+header > div::before,
+header > div::after {
+    content: ' ';
+    display: block;
+    flex: auto;
+}
+
+header > div > h1 {
+    font-size: calc(var(--size-text-large) * 1.5);
+}
+
+header > div > p {
+    font-size: calc(var(--size-text) * 1.5);
+}
+
+header > div > nav > akira-social-button {
+    margin: var(--size-space);
+}
+
+header > div > nav > akira-social-button:first-child {
+    margin-left: 0;
+}
+
+footer {
+    margin: calc(var(--size-space) * 5) auto;
+    font-size: calc(var(--size-text) * 2);
+    text-align: center;
+}
+
+main > article > h2 {
+    margin: calc(var(--size-space) * 5) 0 calc(var(--size-space) * 3) 0;
+    text-align: center;
+}

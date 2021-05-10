@@ -1,0 +1,34 @@
+:root {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    font: var(--size-text)/1.5 'Roboto Slab', serif;
+    text-shadow: 0 1px 5px var(--color-shadow);
+}
+
+h1,
+h2,
+h3 {
+    font-size: var(--size-text-large);
+    font-weight: normal;
+    letter-spacing: 0.1em;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-primary-active);
+}
