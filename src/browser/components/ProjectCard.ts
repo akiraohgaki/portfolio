@@ -8,6 +8,7 @@ export default class LinkCard extends Component {
     }
 
     protected template(): string {
+        const size = '500px';
         const linkAttr = this.attrs.url
             ? `href="${this.attrs.url}" onclick=""`
             : 'href="" onclick="event.preventDefault()"';
@@ -32,16 +33,16 @@ export default class LinkCard extends Component {
 
             <style>
             :host {
-                --color-surface: rgba(0, 0, 0, 0.8);
-                --color-on-surface: #f7f7f7;
+                --color-surface: rgba(18, 26, 43, 0.9);
+                --color-on-surface: #e2f1ff;
             }
 
             :host {
                 display: inline-flex;
                 flex-flow: column nowrap;
-                width: 500px;
-                height: 500px;
-                border-radius: var(--size-radius-large);
+                width: ${size};
+                height: ${size};
+                border-radius: var(--size-radius);
                 background: var(--color-surface) url(${image}) no-repeat center center / cover;
                 color: var(--color-on-surface);
                 text-align: center;
@@ -55,7 +56,7 @@ export default class LinkCard extends Component {
             }
 
             div {
-                border-radius: var(--size-radius-large);
+                border-radius: var(--size-radius);
                 margin: var(--size-space);
                 background-color: var(--color-surface);
             }
