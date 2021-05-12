@@ -1,7 +1,7 @@
-import ProjectCard from './ProjectCard.js';
+import ProjectInfo from './ProjectInfo.js';
 import SocialButton from './SocialButton.js';
 import ScrollTopButton from './ScrollTopButton.js';
 
-ProjectCard.define('akira-project-card');
+ProjectInfo.define('akira-project-info');
 SocialButton.define('akira-social-button');
 ScrollTopButton.define('akira-scroll-top-button');
