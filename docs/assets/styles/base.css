@@ -36,5 +36,5 @@ a {
 }
 
 a:hover {
-    color: var(--color-primary-active);
+    text-decoration: underline;
 }

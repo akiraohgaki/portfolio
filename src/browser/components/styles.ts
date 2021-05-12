@@ -55,10 +55,9 @@ export const textLevelSemantics = `
 a {
     color: var(--color-primary);
     text-decoration: none;
-    outline: none;
 }
 a:hover {
-    color: var(--color-primary-active);
+    text-decoration: underline;
 }
 
 strong {
