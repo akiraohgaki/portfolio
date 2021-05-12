@@ -1,12 +1,12 @@
 :root {
     /* Colors */
-    --color-primary: #ffffff;
+    --color-primary: #fff8d2;
     --color-on-primary: #000000;
 
-    --color-primary-active: #dddddd;
+    --color-primary-active: #fff8d2;
     --color-on-primary-active: #000000;
 
-    --color-primary-passive: #bbbbbb;
+    --color-primary-passive: #fff8d2;
     --color-on-primary-passive: #000000;
 
     --color-secondary: #04b8c8;

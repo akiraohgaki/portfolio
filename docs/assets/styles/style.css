@@ -51,6 +51,10 @@ header::before {
     font-size: calc(var(--size-text-large) * 1.5);
 }
 
+#summary h1 a {
+    color: inherit;
+}
+
 #summary p {
     font-size: calc(var(--size-text) * 1.5);
 }
