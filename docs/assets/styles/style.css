@@ -1,118 +1,118 @@
 h1,
 h2,
 h3 {
-    margin: var(--size-space) 0;
+  margin: var(--size-space) 0;
 }
 
 p {
-    margin: var(--size-space) 0;
+  margin: var(--size-space) 0;
 }
 
 body,
 main article {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 header {
-    --size-cell: 320px;
+  --size-cell: 320px;
 
-    display: flex;
-    flex-flow: column nowrap;
-    gap: var(--size-space);
-    margin: calc(var(--size-space) * 3) 0;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--size-space);
+  margin: calc(var(--size-space) * 3) 0;
 }
 
 header::before {
-    content: ' ';
-    display: block;
-    width: var(--size-cell);
-    height: var(--size-cell);
-    border-radius: var(--size-radius);
-    box-shadow: 0px 3px var(--size-shadow) var(--color-shadow);
-    background: url(https://www.gravatar.com/avatar/72b1d8fc1c4077a12ca5da4d17c93f88?s=500) no-repeat center center / cover;
+  content: ' ';
+  display: block;
+  width: var(--size-cell);
+  height: var(--size-cell);
+  border-radius: var(--size-radius);
+  box-shadow: 0px 3px var(--size-shadow) var(--color-shadow);
+  background: url(https://www.gravatar.com/avatar/72b1d8fc1c4077a12ca5da4d17c93f88?s=500) no-repeat center center / cover;
 }
 
 #summary {
-    display: flex;
-    flex-flow: column nowrap;
-    width: var(--size-cell);
-    text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  width: var(--size-cell);
+  text-align: center;
 }
 
 #summary::before,
 #summary::after {
-    content: ' ';
-    display: block;
-    flex: auto;
+  content: ' ';
+  display: block;
+  flex: auto;
 }
 
 #summary h1 {
-    font-size: calc(var(--size-text-large) * 1.5);
+  font-size: calc(var(--size-text-large) * 1.5);
 }
 
 #summary h1 a {
-    color: inherit;
+  color: inherit;
 }
 
 #summary p {
-    font-size: calc(var(--size-text) * 1.5);
+  font-size: calc(var(--size-text) * 1.5);
 }
 
 #summary nav {
-    margin-top: var(--size-space-large);
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--size-space-large);
-    justify-content: center;
+  margin-top: var(--size-space-large);
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--size-space-large);
+  justify-content: center;
 }
 
 footer {
-    margin: calc(var(--size-space) * 3) 0;
-    text-align: center;
+  margin: calc(var(--size-space) * 3) 0;
+  text-align: center;
 }
 
 footer akira-scroll-top-button {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 main article h2 {
-    text-align: center;
+  text-align: center;
 }
 
 main article akira-project-info {
-    margin: calc(var(--size-space) * 3) 0;
+  margin: calc(var(--size-space) * 3) 0;
 }
 
 @media (min-width: 640px) {
-    header {
-        --size-cell: 500px;
-    }
+  header {
+    --size-cell: 500px;
+  }
 
-    #summary h1 {
-        font-size: calc(var(--size-text-large) * 2);
-    }
+  #summary h1 {
+    font-size: calc(var(--size-text-large) * 2);
+  }
 }
 
 @media (min-width: 1024px) {
-    header {
-        --size-cell: 425px;
+  header {
+    --size-cell: 425px;
 
-        flex-flow: row nowrap;
-        gap: calc(var(--size-cell) / 5);
-    }
+    flex-flow: row nowrap;
+    gap: calc(var(--size-cell) / 5);
+  }
 
-    #summary {
-        text-align: left;
-    }
+  #summary {
+    text-align: left;
+  }
 
-    #summary nav {
-        justify-content: start;
-    }
+  #summary nav {
+    justify-content: start;
+  }
 }
 
 @media (min-width: 1280px) {
-    header {
-        --size-cell: 500px;
-    }
+  header {
+    --size-cell: 500px;
+  }
 }

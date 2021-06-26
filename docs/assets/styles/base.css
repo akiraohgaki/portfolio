@@ -1,40 +1,40 @@
 :root {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    background-color: var(--color-background);
-    color: var(--color-on-background);
-    font: var(--size-text)/1.5 'Roboto Slab', serif;
-    text-shadow: 0 1px 5px var(--color-shadow);
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font: var(--size-text)/1.5 'Roboto Slab', serif;
+  text-shadow: 0 1px 5px var(--color-shadow);
 }
 
 h1,
 h2,
 h3 {
-    font-size: var(--size-text-large);
-    font-weight: normal;
-    letter-spacing: 0.1em;
+  font-size: var(--size-text-large);
+  font-weight: normal;
+  letter-spacing: 0.1em;
 }
 
 a {
-    color: var(--color-primary);
-    text-decoration: none;
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
