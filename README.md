@@ -1,3 +1,5 @@
 # portfolio
 
-Portfolio site for Akira Ohgaki.
+Akira Ohgaki's portfolio site.
+
+http://www.akiraohgaki.com/

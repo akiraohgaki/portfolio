@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "lint": {
+    "include": [
+      "src/",
+      "tests/",
+      "*.ts"
+    ],
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "explicit-module-boundary-types"
+      ],
+      "exclude": [
+        "no-inferrable-types"
+      ]
+    }
+  },
+  "fmt": {
+    "include": [
+      "src/",
+      "tests/",
+      "*.ts"
+    ],
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve"
+  },
+  "test": {
+    "include": [
+      "tests/unit/"
+    ]
+  },
+  "tasks": {
+    "build": "deno task build:setup && deno fmt && deno lint && deno task build:bundle",
+    "build:setup": "curl -fsSL https://raw.githubusercontent.com/akiraohgaki/helper-script/main/remkdir.sh | sh -s -- public 'src/CNAME src/*.html src/*.ico src/*.png src/assets'",
+    "build:bundle": "deno run --allow-env --allow-read --allow-write --allow-net https://raw.githubusercontent.com/akiraohgaki/helper-script/main/deno-bundle.ts src/main.ts public/main.bundle.js",
+    "test": "deno test && deno task test:e2e",
+    "test:e2e": "echo 'Skip task: test:e2e'",
+    "serve": "deno run --allow-read --allow-net https://deno.land/std/http/file_server.ts public -p 3000"
+  },
+  "imports": {
+    "std/": "https://deno.land/std/"
+  }
+}
