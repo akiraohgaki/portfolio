@@ -31,7 +31,7 @@
     "name": "ocs-manager",
     "description": "A tool to handle item installation from OCS provider.\n\nDeveloper 2017-2019. Created a Linux program for Open Collaboration Services.",
     "url": "https://www.opencode.net/akiraohgaki/ocs-manager",
-    "image": "assets/images/projects/ocs-manager.webp",
+    "image": "assets/images/projects/alt.webp",
     "tags": "Qt, Linux, Open Collaboration Services"
   },
   {
@@ -52,14 +52,14 @@
     "name": "KDE/ocs-webserver",
     "description": "Web server for a software store.\n\nDeveloper 2016-2019. For front-end and back-end.",
     "url": "https://github.com/KDE/ocs-webserver",
-    "image": "assets/images/projects/ocs-webserver.webp",
+    "image": "assets/images/projects/alt.webp",
     "tags": "KDE, Web, Open Collaboration Services"
   },
   {
     "name": "KDE/ocs-fileserver",
     "description": "File server for a software store.\n\nDeveloper 2016-2019. Created a storage service for OCS provider.",
     "url": "https://github.com/KDE/ocs-fileserver",
-    "image": "assets/images/projects/ocs-fileserver.webp",
+    "image": "assets/images/projects/alt.webp",
     "tags": "KDE, Storage service, Open Collaboration Services"
   },
   {
