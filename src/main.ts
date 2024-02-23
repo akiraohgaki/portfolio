@@ -3,7 +3,7 @@ import './components/mod.ts';
 
 const router = new chirit.Router('history', '/');
 
-router.set('^/(index\.html)?$', () => {
+router.set('^/(index(\.html)?)?$', () => {
   document.body.appendChild(document.createElement('akira-index-page'));
 });
 router.set('.*', () => {
