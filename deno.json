@@ -51,11 +51,15 @@
     ]
   },
   "tasks": {
-    "build": "deno task build:setup && deno fmt && deno lint && deno task build:bundle",
+    "build": "deno task build:setup && deno task build:bundle && deno task build:teardown",
     "build:setup": "curl -fsSL https://raw.githubusercontent.com/akiraohgaki/helper-script/main/remkdir.sh | sh -s -- public 'src/CNAME src/*.html src/*.ico src/*.png src/assets'",
     "build:bundle": "deno run --allow-env --allow-read --allow-write --allow-net https://raw.githubusercontent.com/akiraohgaki/helper-script/main/deno-bundle.ts src/main.ts public/main.bundle.js",
-    "test": "deno test && deno task test:e2e",
+    "build:teardown": "echo 'Skip task build:teardown'",
+    "test": "deno task test:setup && deno task test:unit && deno task test:e2e && deno task test:teardown",
+    "test:setup": "echo 'Skip task: test:setup'",
+    "test:unit": "deno test tests/unit/",
     "test:e2e": "echo 'Skip task: test:e2e'",
+    "test:teardown": "echo 'Skip task test:teardown'",
     "serve": "deno run --allow-read --allow-net https://deno.land/std/http/file_server.ts public -p 3000"
   },
   "imports": {
